@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>otp</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./App.js"></script>
 </head>
 <body>
     <section class="container">
@@ -14,14 +15,44 @@
         <p>We emailed you the six digit code to cool_guy@email.
             Enter the code below to confirm your email address.</p>
         </div>
-        <div class="button">
-            <input  type="text" maxlength="1" placeholder="0" required>
-            <input  type="text" maxlength="1" placeholder="0" required>
-            <input  type="text" maxlength="1" placeholder="0" required>
-            <input  type="text" maxlength="1" placeholder="0" required>
-            <input  type="text" maxlength="1" placeholder="0" required>
-            <input  type="text" maxlength="1" placeholder="0" required>           
-         </div>
+        <div class="inputRow">
+            <input
+              type="number"
+              id="1"
+              placeholder="0"
+              maxlength="1"
+              onkeyup="clickevent(this,'2')"
+            />
+            <input
+              type="number"
+              id="2"
+              placeholder="0"
+              maxlength="1"
+              onkeyup="clickevent(this,'3')"
+            />
+            <input
+              type="number"
+              id="3"
+              placeholder="0"
+              maxlength="1"
+              onkeyup="clickevent(this,'4')"
+            />
+            <input
+              type="number"
+              id="4"
+              placeholder="0"
+              maxlength="1"
+              onkeyup="clickevent(this,'5')"
+            />
+            <input
+              type="number"
+              id="5"
+              placeholder="0"
+              maxlength="1"
+              onkeyup="clickevent(this,'6')"
+            />
+            <input type="number" id="6" placeholder="0" maxlength="1" />
+          </div>
          <br>
          <div class="bottom">
             <p>This is design only. We did't actually send you an email as we dont have your email, right?</p>
